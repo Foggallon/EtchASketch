@@ -1,13 +1,12 @@
 body {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    justify-content: left;
+    gap: 48px;
     background-color: rgb(147, 229, 171);
 }
 
 .grid {
-    display: flex;
-    max-width: fit-content;
+    display: flex; 
 }
 
 .column {
@@ -18,8 +17,8 @@ body {
 
 .row {
     margin: 0;
-    min-height: 20px;
-    min-width: 20px; 
+    min-height: 10px;
+    min-width: 10px; 
     background-color: white;
 }
 
@@ -43,7 +42,7 @@ body {
     gap: 12px;
 }
 
-.size {
+.siatka {
     border-style: solid;
     border-color: rgb(0, 36, 27);
     border-radius: 5px;
