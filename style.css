@@ -1,5 +1,13 @@
+body {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    background-color: rgb(147, 229, 171);
+}
+
 .grid {
     display: flex;
+    max-width: fit-content;
 }
 
 .column {
@@ -10,8 +18,33 @@
 
 .row {
     margin: 0;
-    height: 50px;
-    width: 50px;
-    background: white;
-    text-align: center;
+    min-height: 20px;
+    min-width: 20px; 
+    background-color: white;
+}
+
+.paint {
+    background-color: black;
+}
+
+.guzior {
+    height: 40px;
+    width: 80px;
+    font-family: 'Quicksand', sans-serif;
+    border-style: solid;
+    border-color: rgb(0, 36, 27);
+    border-radius: 5px;
+    background-color: rgb(181, 255, 225);
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.size {
+    border-style: solid;
+    border-color: rgb(0, 36, 27);
+    border-radius: 5px;
 }

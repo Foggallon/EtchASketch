@@ -12,8 +12,20 @@ for(let i=0;i<=columns;++i)
         let row = document.createElement('div');
         row.className='row';
         //row.textContent=i+"_"+j;
+        row.addEventListener('mouseover',()=>
+        {
+            event.target.classList.add('paint');
+        });
         column.appendChild(row);
     }
     grid.appendChild(column);
 }
-document.appendChild(grid);
+document.body.appendChild(grid);
+
+let reset=document.querySelector('.guzior');
+reset.addEventListener('click',function(){
+    let rows=document.querySelectorAll('.grid .column .row');
+    rows.forEach((row)=>{
+        row.classList.remove('paint');
+    })
+});
